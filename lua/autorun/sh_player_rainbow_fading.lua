@@ -1,10 +1,5 @@
 local addonName = 'Player Rainbow Fading'
 
--- gLua Refresh Protection
-pAddons = pAddons or {}
-if pAddons[ addonName ] then return end
-pAddons[ addonName ] = true
-
 if CLIENT then
 
     CreateClientConVar( 'colorfade_enable', 0, true, true, 'Makes your character glow like a Mario after eating a star (Works only with colorable models)', 0, 1 )
